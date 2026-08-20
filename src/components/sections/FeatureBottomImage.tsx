@@ -1,11 +1,6 @@
 // src/components/sections/FeatureBottomImage.tsx
 import React from "react";
-
-interface FeatureBottomImageProps {
-  title: string;
-  description: string;
-  imageUrl: string;
-}
+import type { FeatureBottomImageProps } from "../../types";
 
 export const FeatureBottomImage: React.FC<FeatureBottomImageProps> = ({
   title,

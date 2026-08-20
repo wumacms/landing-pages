@@ -2,17 +2,7 @@
 import React from "react";
 import { Card } from "../ui/Card";
 import { Button } from "../ui/Button";
-
-interface PricingPlan {
-  id: number;
-  name: string;
-  price: string;
-  period?: string;
-  features: string[];
-  isPopular?: boolean;
-  ctaText: string;
-  ctaVariant?: "primary" | "outline" | "ghost";
-}
+import type { PricingPlan } from "../../types";
 
 interface PricingProps {
   plans: PricingPlan[];

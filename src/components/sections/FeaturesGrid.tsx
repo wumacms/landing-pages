@@ -1,13 +1,7 @@
 // src/components/sections/FeaturesGrid.tsx
 import React from "react";
 import { Card, CardHeader, CardTitle, CardDescription } from "../ui/Card";
-
-interface Feature {
-  id: number;
-  title: string;
-  description: string;
-  icon: string;
-}
+import type { Feature } from "../../types";
 
 interface FeaturesGridProps {
   features: Feature[];

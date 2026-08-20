@@ -1,15 +1,7 @@
 // src/components/sections/CTA.tsx
 import React from 'react';
 import { Button } from '../ui/Button';
-
-interface CTAProps {
-  title: string;
-  description: string;
-  primaryCtaText: string;
-  primaryCtaHref: string;
-  secondaryCtaText: string;
-  secondaryCtaHref: string;
-}
+import type { CTAProps } from '../../types';
 
 export const CTA: React.FC<CTAProps> = ({
   title,

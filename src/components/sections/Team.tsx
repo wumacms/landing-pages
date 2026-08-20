@@ -1,12 +1,6 @@
 // src/components/sections/Team.tsx
 import React from "react";
-
-interface TeamMember {
-  id: number;
-  name: string;
-  role: string;
-  avatar: string;
-}
+import type { TeamMember } from "../../types";
 
 interface TeamProps {
   members: TeamMember[];

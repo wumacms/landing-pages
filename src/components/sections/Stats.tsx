@@ -1,11 +1,6 @@
 // src/components/sections/Stats.tsx
 import React from "react";
-
-interface Stat {
-  id: number;
-  value: string;
-  label: string;
-}
+import type { Stat } from "../../types";
 
 interface StatsProps {
   stats: Stat[];

@@ -1,12 +1,7 @@
 // src/components/layout/Footer.tsx
 import React from "react";
 import defaultLogoSvg from "../../assets/react.svg";
-
-interface FooterProps {
-  companyName?: string;
-  logoImage?: string;
-  year?: number;
-}
+import type { FooterProps } from "../../types";
 
 export const Footer: React.FC<FooterProps> = ({
   companyName = "ChatFlow",

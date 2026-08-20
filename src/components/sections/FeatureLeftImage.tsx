@@ -1,14 +1,8 @@
 // src/components/sections/FeatureLeftImage.tsx
 import React from "react";
+import type { FeatureImageProps } from "../../types";
 
-interface FeatureLeftImageProps {
-  title: string;
-  description: string;
-  tags: string[];
-  imageUrl: string;
-}
-
-export const FeatureLeftImage: React.FC<FeatureLeftImageProps> = ({
+export const FeatureLeftImage: React.FC<FeatureImageProps> = ({
   title,
   description,
   tags,

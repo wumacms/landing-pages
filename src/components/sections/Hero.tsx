@@ -1,16 +1,7 @@
 // src/components/sections/Hero.tsx
 import React from "react";
 import { Button } from "../ui/Button";
-
-interface HeroProps {
-  title: string;
-  subtitle: string;
-  primaryCtaText: string;
-  primaryCtaHref: string;
-  secondaryCtaText: string;
-  secondaryCtaHref: string;
-  imageUrl: string;
-}
+import type { HeroProps } from "../../types";
 
 export const Hero: React.FC<HeroProps> = ({
   title,

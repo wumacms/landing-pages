@@ -1,11 +1,6 @@
 // src/components/sections/FAQ.tsx
 import React, { useState } from "react";
-
-interface FAQItem {
-  id: number;
-  question: string;
-  answer: string;
-}
+import type { FAQItem } from "../../types";
 
 interface FAQProps {
   items: FAQItem[];

@@ -2,21 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "../ui/Button";
 import defaultLogoSvg from "../../assets/react.svg";
-
-interface NavItem {
-  label: string;
-  href?: string;
-  children?: Array<{ label: string; href: string; icon?: string }>;
-  icon?: string;
-}
-
-interface NavbarProps {
-  logoText?: string;
-  logoImage?: string;
-  menuItems?: NavItem[];
-  ctaText?: string;
-  ctaHref?: string;
-}
+import type { NavbarProps } from "../../types";
 
 export const Navbar: React.FC<NavbarProps> = ({
   logoText = "ChatFlow",
